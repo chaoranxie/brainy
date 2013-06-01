@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @path.name %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @path.creator %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @path.created_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_path_path(@path) %> |
+<%= link_to 'Back', paths_path %>
