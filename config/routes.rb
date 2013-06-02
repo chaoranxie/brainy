@@ -5,8 +5,7 @@ Brainy::Application.routes.draw do
   root :to => "home#index"
   resources :products
 
-  match "/paths/new" => "paths#new", :via => :get
-  match '/paths/search' => 'paths#search', :via => :post
+  match "/search" => "search#index", :via => :get
   
 # The priority is based upon order of creation:
   # first created -> highest priority.
